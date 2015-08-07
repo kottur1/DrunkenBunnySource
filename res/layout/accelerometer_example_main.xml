@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/defaultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntroActivity"
+    android:background="#ed7b7b" >
+
+   
+   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    
+	    <TextView
+	        android:layout_width="wrap_content"    
+	        android:layout_height="wrap_content"          
+			android:id="@+id/tvShakeScore"
+			android:textSize="30dp"
+	        android:text="Score:"		
+			/>
+	  
+	    <TextView
+	        android:id="@+id/tvChance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+			android:textSize="30dp"
+	        android:text="          Chance : 5" />
+    
+	</LinearLayout>
+
+
+<!--
+<TableRow>       
+    <TextView
+        android:id="@+id/tvSpinStartPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#000000"
+        android:text="Start Degree: 0.0" />
+</TableRow>
+   
+<TableRow>       
+    <TextView
+        android:id="@+id/tvCurrentDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#000000"
+        android:text="Current Degree : 0.0" />
+</TableRow>
+
+<TableRow>       
+    <TextView
+        android:id="@+id/tvOppositePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#000000"
+        android:text="Opposite point : 0.0" />
+</TableRow>
+
+<TableRow>       
+    <TextView
+        android:id="@+id/tvCurrentPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#000000"
+        android:text="Current Point : 0.0" />
+</TableRow>
+
+<TableRow>       
+    <TextView
+        android:id="@+id/tvNextPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#000000"
+        android:text="Next Point : 0.0" />
+</TableRow>
+
+<TableRow>       
+    <TextView
+        android:id="@+id/tvEndPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#000000"
+        android:text="End Point : 0.0" />
+</TableRow>
+-->
+
+
+
+    <ImageView
+        android:id="@+id/imageViewCompass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAction"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_compass" />
+
+	<Button android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/closeButton" 
+		android:text="Finish game"
+		android:onClick="closeApp"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		 />
+
+
+</RelativeLayout>
